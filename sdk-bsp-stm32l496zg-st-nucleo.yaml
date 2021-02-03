@@ -1,0 +1,104 @@
+board:
+  buy_url_cn: https://www.st.com/en/evaluation-tools/nucleo-l496zg.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/nucleo-l496zg.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Nucleo-L496ZG is a Cortex-M4 Nucleo-144 development board designed
+    for the STM32L4 series launched by ST Company. It supports MBED, is compatible
+    with Arduino, and has ST Zio and ST Morpho extension interfaces, which can connect
+    all peripheral devices of the microcontroller.
+  description_zh: NUCLEO-L496ZG 是 ST 公司推出的一款针对 STM32L4 系列设计的 Cortex-M4 Nucleo-144
+    开发板，支持 mbed，兼容 Arduino、还带有ST Zio和 ST Morpho 扩展接口，可连接微控制器的所有周边外设。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32L496ZG-ST-NUCLEO
+  price_cn: 114 CNY
+  price_global: 19 USD
+  sale_contact_cn: https://www.st.com/content/st_com/en/contact-us.html
+  sale_contact_global: https://www.st.com/content/st_com/en/contact-us.html
+  small_image: documents/images/small.png
+  vendor: RealThread
+  version: 1.0.0
+chip:
+  chip_name: STM32L496ZGTx
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L496ZG
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/DS11585.pdf
+  title: Datasheet
+- category: manual
+  file: documents/UM2179.pdf
+  title: STM32 Nucleo-144 boards
+example_projects: []
+features:
+- On-board ST-LINK/V2-1
+- USB VBUS, ext. VIN, ext. 5V, ext +3.3V
+- USB OTG FS (Full speed) with micro-AB Connector
+- 'STMicroelectronics Morpho connector : (2 x 72)'
+- STMicroelectronics Zio (Arduino connector)
+- 'Push-buttons: User and Reset'
+- 'LEDs: COM, Power, User LEDs'
+features_zh:
+- On-board ST-LINK/V2-1
+- USB VBUS, ext. VIN, ext. 5V, ext +3.3V
+- USB OTG FS (Full speed) with micro-AB Connector
+- 'STMicroelectronics Morpho connector : (2 x 72)'
+- STMicroelectronics Zio (Arduino connector)
+- 'Push-buttons: User and Reset'
+- 'LEDs: COM, Power, User LEDs'
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32l496-st-nucleo
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
